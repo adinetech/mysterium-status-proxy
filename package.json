@@ -1,7 +1,8 @@
 {
-  "name": "myst-status-proxy",
+  "name": "mysterium-status-proxy",
   "version": "1.0.0",
-  "description": "Reverse proxy to safely expose Mysterium Network community status page",
+  "description": "Reverse proxy for the Mysterium Network community status page (protected by Cloudflare).",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

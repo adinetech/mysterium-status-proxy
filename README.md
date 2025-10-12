@@ -17,7 +17,3 @@ A lightweight Express-based reverse proxy that safely routes requests to the [My
 
 ### Environment Variables
 None needed.
-
----
-
-Made by [Adine Vikash](https://github.com/adinevikash)

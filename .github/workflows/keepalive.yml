@@ -2,7 +2,7 @@ name: Keep Render Alive (heartbeat)
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
+    - cron: '*/15 * * * *'  # Every 15 minutes
   workflow_dispatch:        # Allow manual trigger
 
 jobs:
@@ -12,5 +12,5 @@ jobs:
       - name: Ping Mysterium Status Proxy
         run: |
           echo "$(date -u) - Sending heartbeat..."
-          curl --fail --silent --show-error --max-time 15 "https://mysterium-status-proxy.onrender.com/status/mysterium" >/dev/null
+          curl --fail --silent --show-error --max-time 20 "https://mysterium-status-proxy.onrender.com/status/mysterium" >/dev/null
           echo "✅ Ping successful."
